@@ -1,5 +1,5 @@
 import './style.scss'
-import exelGenerator from './exelGenerator';
+import excelGenerator from './excelGenerator';
 
 const inputData = document.querySelector('#user-data')
 const sheetName = document.querySelector('#sheet-name')
@@ -23,7 +23,7 @@ const downloadButtonHandler = () => {
   }
 
   try {
-    exelGenerator({
+    excelGenerator({
       sheetName: sheetName.value,
       inputData: inputData.value,
       clientsQuantity: Number(clientsQuantity.value)
